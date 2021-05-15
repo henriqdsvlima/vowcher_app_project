@@ -57,34 +57,44 @@ class _VowcherLoginState extends State<VowcherLogin> {
 
     final loginButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
-      child: RaisedButton(
+      child: TextButton(
         onPressed: () {},
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24),
-        ),
-        padding: EdgeInsets.all(12),
-        color: Colors.red,
+        style: TextButton.styleFrom(
+            primary: Colors.transparent,
+            side: BorderSide(color: Colors.transparent)),
         child: Text(
-          'Log In',
-          style: TextStyle(color: Colors.white, fontSize: 12.0),
+          'Login',
+          style: TextStyle(color: Colors.white),
         ),
       ),
     );
 
-    final forgotlabel = TextButton(
-      autofocus: true,
-      onPressed: () {},
-      child: Container(
+    final forgotlabel = Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0),
+      child: TextButton(
+        onPressed: () {},
+        style: TextButton.styleFrom(
+            primary: Colors.transparent,
+            side: BorderSide(color: Colors.transparent)),
         child: Text(
-          'Esqueceu sua senha?',
-          style: TextStyle(color: Colors.white, fontSize: 10.0),
+          'Forgot your password?',
+          style: TextStyle(color: Colors.white),
         ),
       ),
     );
 
-    final Register = ElevatedButton(
-      autofocus: false,
-      onPressed: () {},
+    final register = Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0),
+      child: TextButton(
+        onPressed: () {},
+        style: TextButton.styleFrom(
+            primary: Colors.transparent,
+            side: BorderSide(color: Colors.transparent)),
+        child: Text(
+          'Register',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
     );
 
     return MaterialApp(
@@ -109,6 +119,7 @@ class _VowcherLoginState extends State<VowcherLogin> {
               ),
               loginButton,
               forgotlabel,
+              register,
             ],
           ),
         ),
