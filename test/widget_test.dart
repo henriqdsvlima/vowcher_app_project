@@ -13,7 +13,7 @@ import 'package:vowcher_app_project/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(VowcherLogin());
+    await tester.pumpWidget(VowcherApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
