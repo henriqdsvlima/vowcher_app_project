@@ -43,7 +43,7 @@ class _VowcherRegisterState extends State<VowcherRegister> {
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(50.0))),
                     focusColor: Colors.white,
-                    hintText: 'Nome',
+                    hintText: 'Nome ',
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
