@@ -37,10 +37,12 @@ class _VowcherRegisterState extends State<VowcherRegister> {
             children: <Widget>[
               TextFormField(
                   decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
                     border: new OutlineInputBorder(
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(50.0))),
-                    focusColor: Color(0xffff5d53),
+                    focusColor: Colors.white,
                     hintText: 'Nome',
                   ),
                   validator: (value) {
@@ -53,10 +55,12 @@ class _VowcherRegisterState extends State<VowcherRegister> {
               ),
               TextFormField(
                   decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
                     border: new OutlineInputBorder(
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(50.0))),
-                    focusColor: Color(0xffff5d53),
+                    focusColor: Colors.white,
                     hintText: 'Sobrenome',
                   ),
                   validator: (value) {
@@ -69,7 +73,9 @@ class _VowcherRegisterState extends State<VowcherRegister> {
               ),
               TextFormField(
                   decoration: InputDecoration(
-                    focusColor: Color(0xffff5d53),
+                    fillColor: Colors.white,
+                    filled: true,
+                    focusColor: Colors.white,
                     hintText: 'Email',
                     border: new OutlineInputBorder(
                         borderRadius: const BorderRadius.all(
@@ -86,10 +92,12 @@ class _VowcherRegisterState extends State<VowcherRegister> {
               TextFormField(
                   keyboardType: TextInputType.visiblePassword,
                   decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
                     border: new OutlineInputBorder(
                         borderRadius: const BorderRadius.all(
                             const Radius.circular(50.0))),
-                    focusColor: Color(0xffff5d53),
+                    focusColor: Colors.white,
                     hintText: 'Senha',
                   ),
                   validator: (value) {
