@@ -1,9 +1,7 @@
-import 'package:vowcher_app_project/components/chart_bar.dart';
 import 'package:vowcher_app_project/models/cupom.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import '../models/cupom.dart';
-import 'chart_bar.dart';
+
 
 class Chart extends StatelessWidget {
   final List<Cupom> recentCupom;
