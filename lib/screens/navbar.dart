@@ -16,14 +16,11 @@ class NavBar extends StatelessWidget {
               bottom: TabBar(
                 tabs: [
                   Tab(
-                    text: 'Login',
-                  ),
-                  Tab(
-                    text: 'Registro',
-                  ),
-                  Tab(
                     text: 'Perfil',
                   ),
+                  Tab(
+                    text: 'Meus Cupons',
+                  )
                 ],
               ),
             ),
