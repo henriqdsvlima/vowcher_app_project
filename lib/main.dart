@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:vowcher_app_project/screens/vowcher_login.dart';
-import 'package:vowcher_app_project/screens/vowcher_register.dart';
+import 'screens/navbar.dart';
 
 void main() {
-  runApp(VowcherRegister());
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: NavBar()));
 }
 
 class VowcherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: new ThemeData(
+        primarySwatch: Colors.red,
+        brightness: Brightness.dark,
+        fontFamily: 'Poppins',
+      ),
       // home: VowcherLogin(),
-      home: VowcherRegister(),
+      home: NavBar(),
     );
   }
 }
