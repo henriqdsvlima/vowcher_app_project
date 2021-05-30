@@ -101,26 +101,24 @@ class _CupomHomePageState extends State<CupomHomePage> {
   @override
   Widget build(BuildContext context) {
     initializeDateFormatting('pt_BR', null);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Chart(_recentCupons),
-              CupomList(_cupons, _deleteCupom),
-            ],
-          ),
+    print(MaterialLocalizations.of(context));
+    return new Scaffold(
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Chart(_recentCupons),
+            CupomList(_cupons, _deleteCupom),
+          ],
         ),
-        floatingActionButton: Builder(
-            builder: (context) => FloatingActionButton(
-                  child: Icon(Icons.add),
-                  onPressed: () => _openCupomFormModal(context),
-                )),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
+      floatingActionButton: Builder(
+          builder: (context) => FloatingActionButton(
+                child: Icon(Icons.add),
+                onPressed: () => _openCupomFormModal(context),
+              )),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
