@@ -42,7 +42,7 @@ class _InfoState extends State<Info> {
               ),
             ),
             SizedBox(
-              height: 50.0,
+              height: 12.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

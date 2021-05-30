@@ -102,6 +102,7 @@ class _CupomHomePageState extends State<CupomHomePage> {
   Widget build(BuildContext context) {
     initializeDateFormatting('pt_BR', null);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
