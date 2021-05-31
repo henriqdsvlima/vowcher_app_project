@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'cupom_home.dart';
-import 'profile.dart';
+import 'vowcher_coupons_home.dart';
+import 'vowcher_profile.dart';
 import 'vowcher_info.dart';
 
 class NavBar extends StatelessWidget {

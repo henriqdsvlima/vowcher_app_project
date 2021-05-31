@@ -1,3 +1,4 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/navbar.dart';
 
@@ -16,7 +17,12 @@ class VowcherApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       // home: VowcherLogin(),
-      home: NavBar(),
+      home: AnimatedSplashScreen(
+        splash: Image.asset('assets/logo.png'),
+        nextScreen: NavBar(),
+        splashTransition: SplashTransition.fadeTransition,
+        backgroundColor: Colors.red[300],
+      ),
     );
   }
 }

@@ -7,7 +7,7 @@ import 'package:intl/date_symbol_data_local.dart';
 import 'package:vowcher_app_project/components/chart.dart';
 import 'package:vowcher_app_project/components/cupom_form.dart';
 import 'package:vowcher_app_project/components/cupom_list.dart';
-import 'package:vowcher_app_project/models/cupom.dart';
+import 'package:vowcher_app_project/models/coupon.dart';
 
 // class CupomHome extends StatelessWidget {
 //   const CupomHome({Key key}) : super(key: key);
