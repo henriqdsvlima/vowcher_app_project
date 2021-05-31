@@ -116,6 +116,7 @@ class _CupomHomePageState extends State<CupomHomePage> {
       floatingActionButton: Builder(
           builder: (context) => FloatingActionButton(
                 child: Icon(Icons.add),
+                backgroundColor: Colors.red[500],
                 onPressed: () => _openCupomFormModal(context),
               )),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
