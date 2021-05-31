@@ -9,6 +9,7 @@ class Info extends StatefulWidget {
 }
 
 class _InfoState extends State<Info> {
+  String _nomeUsuario = 'Henrique Lima';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,12 +22,13 @@ class _InfoState extends State<Info> {
             CircleAvatar(
               radius: 56,
               backgroundImage: AssetImage('assets/images/user.png'),
+              backgroundColor: Colors.red[100],
             ),
             SizedBox(
               height: 25.0,
             ),
             Text(
-              'Membro',
+              '$_nomeUsuario',
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -34,7 +36,7 @@ class _InfoState extends State<Info> {
               ),
             ),
             Text(
-              '@Membro',
+              '@$_nomeUsuario',
               style: TextStyle(
                 color: Colors.grey,
                 fontWeight: FontWeight.w400,

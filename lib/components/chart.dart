@@ -2,7 +2,6 @@ import 'package:vowcher_app_project/models/cupom.dart';
 import 'package:flutter/material.dart';
 import '../models/cupom.dart';
 
-
 class Chart extends StatelessWidget {
   final List<Cupom> recentCupom;
 
@@ -39,6 +38,8 @@ class Chart extends StatelessWidget {
   //   });
   // }
 
+  String _nomeUsuario = 'Henrique Lima';
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -67,7 +68,7 @@ class Chart extends StatelessWidget {
               ),
             ),
             Text(
-              'Ola Membro\nBem Vindo',
+              'Ola $_nomeUsuario,\nBem Vindo',
               style: Theme.of(context).textTheme.headline6,
             ),
           ],

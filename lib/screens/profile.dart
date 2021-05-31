@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vowcher_app_project/components/circle_avatar.dart';
 
 String _nomeUsuario = 'Henrique Lima';
 
@@ -19,15 +20,7 @@ class VowcherProfile extends StatelessWidget {
                       radius: 30,
                       child: Align(
                         alignment: Alignment.bottomRight,
-                        child: CircleAvatar(
-                          backgroundColor: Colors.white,
-                          radius: 12.0,
-                          child: Icon(
-                            Icons.camera_alt,
-                            size: 15.0,
-                            color: Color(0xFF404040),
-                          ),
-                        ),
+                        child: Avatar(),
                       ),
                     ),
                   ),
