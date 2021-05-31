@@ -1,42 +1,11 @@
-import 'package:vowcher_app_project/models/cupom.dart';
+import 'package:vowcher_app_project/models/coupon.dart';
 import 'package:flutter/material.dart';
-import '../models/cupom.dart';
+import '../models/coupon.dart';
 
 class Chart extends StatelessWidget {
   final List<Cupom> recentCupom;
 
   Chart(this.recentCupom);
-
-  // List<Map<String, Object>> get groupedCupons {
-  //   return List.generate(7, (index) {
-  //     final weekDay = DateTime.now().subtract(
-  //       Duration(days: index),
-  //     );
-
-  //     double totalSum = 0.0;
-
-  //     for (var i = 0; i < recentCupom.length; i++) {
-  //       bool sameDay = recentCupom[i].date.day == weekDay.day;
-  //       bool sameMonth = recentCupom[i].date.month == weekDay.month;
-  //       bool sameYear = recentCupom[i].date.year == weekDay.year;
-
-  //       if (sameDay && sameMonth && sameYear) {
-  //         totalSum += recentCupom[i].value;
-  //       }
-  //     }
-
-  //     return {
-  //       'day': DateFormat.E().format(weekDay)[0],
-  //       'value': totalSum,
-  //     };
-  //   }).reversed.toList();
-  // }
-
-  // double get _weekTotalValue {
-  //   return groupedCupons.fold(0.0, (sum, tr) {
-  //     return sum + tr['value'];
-  //   });
-  // }
 
   String _nomeUsuario = 'Henrique Lima';
 

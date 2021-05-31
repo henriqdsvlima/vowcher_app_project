@@ -1,6 +1,6 @@
-import 'package:vowcher_app_project/models/cupom.dart';
+import 'package:vowcher_app_project/models/coupon.dart';
 import 'package:flutter/material.dart';
-import '../models/cupom.dart';
+import '../models/coupon.dart';
 import 'package:intl/intl.dart';
 
 class CupomList extends StatelessWidget {
