@@ -20,19 +20,3 @@ void main() {
     ),
   ));
 }
-
-class VowcherApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: new ThemeData(
-        primarySwatch: Colors.red,
-        brightness: Brightness.dark,
-        fontFamily: 'Poppins',
-      ),
-      // home: VowcherLogin(),
-      home: NavBar(),
-    );
-  }
-}
