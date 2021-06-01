@@ -3,7 +3,22 @@ import 'package:flutter/material.dart';
 import 'screens/navbar.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: NavBar()));
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: AnimatedSplashScreen(
+      splash: Text(
+        'Vowcher!',
+        style: TextStyle(
+            color: Colors.white,
+            fontSize: 30.0,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Poppins'),
+      ),
+      nextScreen: NavBar(),
+      splashTransition: SplashTransition.slideTransition,
+      backgroundColor: Color(0xFFA5140C),
+    ),
+  ));
 }
 
 class VowcherApp extends StatelessWidget {
@@ -17,12 +32,7 @@ class VowcherApp extends StatelessWidget {
         fontFamily: 'Poppins',
       ),
       // home: VowcherLogin(),
-      home: AnimatedSplashScreen(
-        splash: Image.asset('assets/logo.png'),
-        nextScreen: NavBar(),
-        splashTransition: SplashTransition.fadeTransition,
-        backgroundColor: Colors.red[300],
-      ),
+      home: NavBar(),
     );
   }
 }
